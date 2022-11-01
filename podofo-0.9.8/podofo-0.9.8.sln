@@ -3,9 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_thirdparty", "0_thirdparty", "{184E2460-6809-4F1F-920F-6FB0C479BA30}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "podofo", "thirdparty\podofo-0.9.8\podofo.vcxproj", "{FB70D59F-AD7E-351E-B0B7-CB77894A5494}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB70D59F-AD7E-351E-B0B7-CB77894A5494}.Debug|x64.ActiveCfg = Debug|x64
+		{FB70D59F-AD7E-351E-B0B7-CB77894A5494}.Debug|x64.Build.0 = Debug|x64
+		{FB70D59F-AD7E-351E-B0B7-CB77894A5494}.Release|x64.ActiveCfg = Release|x64
+		{FB70D59F-AD7E-351E-B0B7-CB77894A5494}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB70D59F-AD7E-351E-B0B7-CB77894A5494} = {184E2460-6809-4F1F-920F-6FB0C479BA30}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
