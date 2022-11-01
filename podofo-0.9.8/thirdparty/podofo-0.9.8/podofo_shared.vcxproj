@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FB70D59F-AD7E-351E-B0B7-CB77894A5494}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>podofo_shared</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">S:\podofo-0.9.8\src\podofo\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">podofo_shared.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">podofo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">S:\podofo-0.9.8\src\podofo\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">podofo_shared.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">podofo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>S:\podofo-0.9.8;S:\podofo-0.9.8\src;S:\podofo-0.9.8\src\podofo;ZLIB_INCLUDE_DIR-NOTFOUND;S:\podofo-0.9.8\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Debug";podofo_shared_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";podofo_shared_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>S:\podofo-0.9.8;S:\podofo-0.9.8\src;S:\podofo-0.9.8\src\podofo;ZLIB_INCLUDE_DIR-NOTFOUND;S:\podofo-0.9.8\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>S:\podofo-0.9.8;S:\podofo-0.9.8\src;S:\podofo-0.9.8\src\podofo;ZLIB_INCLUDE_DIR-NOTFOUND;S:\podofo-0.9.8\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>S:/podofo-0.9.8/src/podofo;S:/podofo-0.9.8/src/podofo/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>S:/podofo-0.9.8/src/podofo/Debug/podofo.lib</ImportLibrary>
+      <ProgramDataBaseFile>S:/podofo-0.9.8/src/podofo/Debug/podofo.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>S:\podofo-0.9.8;S:\podofo-0.9.8\src;S:\podofo-0.9.8\src\podofo;ZLIB_INCLUDE_DIR-NOTFOUND;S:\podofo-0.9.8\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Release";podofo_shared_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";podofo_shared_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>S:\podofo-0.9.8;S:\podofo-0.9.8\src;S:\podofo-0.9.8\src\podofo;ZLIB_INCLUDE_DIR-NOTFOUND;S:\podofo-0.9.8\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>S:\podofo-0.9.8;S:\podofo-0.9.8\src;S:\podofo-0.9.8\src\podofo;ZLIB_INCLUDE_DIR-NOTFOUND;S:\podofo-0.9.8\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>S:/podofo-0.9.8/src/podofo;S:/podofo-0.9.8/src/podofo/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>S:/podofo-0.9.8/src/podofo/Release/podofo.lib</ImportLibrary>
+      <ProgramDataBaseFile>S:/podofo-0.9.8/src/podofo/Release/podofo.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="S:\podofo-0.9.8\src\podofo\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule S:/podofo-0.9.8/src/podofo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SS:/podofo-0.9.8 -BS:/podofo-0.9.8 --check-stamp-file S:/podofo-0.9.8/src/podofo/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">S:\podofo-0.9.8\src\podofo\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule S:/podofo-0.9.8/src/podofo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SS:/podofo-0.9.8 -BS:/podofo-0.9.8 --check-stamp-file S:/podofo-0.9.8/src/podofo/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">S:\podofo-0.9.8\src\podofo\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfArray.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfCanvas.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfColor.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfContentsTokenizer.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfData.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfDataType.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfOwnedDataType.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfDate.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfDictionary.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfEncoding.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfEncodingFactory.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfEncrypt.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfError.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfFileStream.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfFilter.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfFiltersPrivate.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfImmediateWriter.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfInputDevice.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfInputStream.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfLocale.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfMemStream.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfMemoryManagement.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfName.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfObject.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfObjectStreamParserObject.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfOutputDevice.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfOutputStream.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfParser.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfParserObject.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfRect.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfRefCountedBuffer.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfRefCountedInputDevice.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfReference.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfStream.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfString.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfTokenizer.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfVariant.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfVecObjects.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfWriter.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfXRef.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfXRefStream.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\base\PdfXRefStreamParserObject.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfAcroForm.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfAction.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfAnnotation.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfCMapEncoding.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfContents.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfDestination.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfDifferenceEncoding.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfDocument.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfElement.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfEncodingObjectFactory.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfExtGState.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfField.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFileSpec.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFont.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontCID.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontCache.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontConfigWrapper.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontFactory.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontMetrics.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontMetricsBase14.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontMetricsFreetype.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontMetricsObject.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontSimple.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontTTFSubset.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontTrueType.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontType1.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontType3.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontType1Base14.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfFunction.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfHintStream.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfIdentityEncoding.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfImage.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfInfo.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfMemDocument.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfNamesTree.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfOutlines.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfPage.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfPagesTree.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfPagesTreeCache.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfPainter.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfPainterMM.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfShadingPattern.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfSignOutputDevice.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfSignatureField.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfStreamedDocument.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfTable.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfTilingPattern.cpp" />
+    <ClCompile Include="S:\podofo-0.9.8\src\podofo\doc\PdfXObject.cpp" />
+    <ResourceCompile Include="S:\podofo-0.9.8\src\podofo\doc\podofo-doc.rc" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\podofo-base.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\podofo.h" />
+    <ClInclude Include="S:\podofo-0.9.8\podofo_config.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\Pdf3rdPtyForwardDecl.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfArray.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfCanvas.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfColor.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfCompilerCompat.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfCompilerCompatPrivate.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfContentsTokenizer.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfData.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfDataType.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfOwnedDataType.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfDate.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfDefines.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfDefinesPrivate.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfDictionary.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfEncoding.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfEncodingFactory.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfEncrypt.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfExtension.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfError.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfFileStream.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfFilter.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfFiltersPrivate.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfImmediateWriter.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfInputDevice.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfInputStream.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfLocale.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfMemStream.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfMemoryManagement.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfName.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfObject.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfObjectStreamParserObject.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfOutputDevice.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfOutputStream.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfParser.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfParserObject.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfRect.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfRefCountedBuffer.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfRefCountedInputDevice.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfReference.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfStream.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfString.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfTokenizer.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfVariant.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfVecObjects.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfVersion.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfWriter.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfXRef.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfXRefStream.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\PdfXRefStreamParserObject.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\podofoapi.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\util\PdfMutex.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\util\PdfMutexImpl_noop.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\util\PdfMutexImpl_win32.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\util\PdfMutexImpl_pthread.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\base\util\PdfMutexWrapper.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfAcroForm.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfAction.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfAnnotation.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfCMapEncoding.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfContents.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfDestination.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfDifferenceEncoding.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfDocument.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfElement.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfEncodingObjectFactory.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfExtGState.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfField.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFileSpec.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFont.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontCID.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontCache.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontConfigWrapper.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontFactory.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontFactoryBase14Data.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontMetrics.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontMetricsBase14.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontMetricsFreetype.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontMetricsObject.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontSimple.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontTTFSubset.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontTrueType.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontType1.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontType3.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFontType1Base14.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfFunction.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfHintStream.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfIdentityEncoding.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfImage.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfInfo.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfMemDocument.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfNamesTree.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfOutlines.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfPage.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfPagesTree.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfPagesTreeCache.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfPainter.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfPainterMM.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfShadingPattern.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfSignOutputDevice.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfSignatureField.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfStreamedDocument.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfTable.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfTilingPattern.h" />
+    <ClInclude Include="S:\podofo-0.9.8\src\podofo\doc\PdfXObject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="S:\podofo-0.9.8\ZERO_CHECK.vcxproj">
+      <Project>{2A239FBA-8006-3D1D-A5C2-DFB8A2D53A06}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
