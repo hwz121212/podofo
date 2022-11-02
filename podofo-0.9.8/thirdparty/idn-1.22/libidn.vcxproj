@@ -117,6 +117,7 @@
     <ClInclude Include="include\gunidecomp.h" />
     <ClInclude Include="include\idn-free.h" />
     <ClInclude Include="include\idna.h" />
+    <ClInclude Include="include\idna_export.h" />
     <ClInclude Include="include\pr29.h" />
     <ClInclude Include="include\punycode.h" />
     <ClInclude Include="include\stringprep.h" />
