@@ -49,7 +49,7 @@ void WriteStringToStream( const PdfString & rsString, std::ostringstream & oss, 
 
 void CreateUnicodeAnnotationText( PdfPage* pPage, PdfDocument* /*pDocument*/ )
 {
-    PdfString sJap(reinterpret_cast<const pdf_utf8*>("「PoDoFo」は今から日本語も話せます。"));
+    PdfString sJap(reinterpret_cast<const pdf_utf8*>(" PoDoFo "));
     PdfAnnotation* pAnnotation =
         pPage->CreateAnnotation( ePdfAnnotation_Text, PdfRect( 400.0, 200.0, 20.0, 20.0 ) );
 
@@ -61,7 +61,7 @@ void CreateUnicodeAnnotationText( PdfPage* pPage, PdfDocument* /*pDocument*/ )
 
 void CreateUnicodeAnnotationFreeText( PdfPage* pPage, PdfDocument* pDocument )
 {
-    PdfString sJap(reinterpret_cast<const pdf_utf8*>("「PoDoFo」は今から日本語も話せます。"));
+    PdfString sJap(reinterpret_cast<const pdf_utf8*>(" PoDoFo "));
     PdfFont* pFont = pDocument->CreateFont( "Arial Unicode MS", false, new PdfIdentityEncoding( 0, 0xffff, true ) );
 
     PdfRect rect( 200.0, 200.0, 200.0, 200.0 );
@@ -954,7 +954,7 @@ int main( int argc, char* argv[] )
         TEST_SAFE_OP( writer.GetInfo()->SetTitle   ( PdfString("Test Document") ) );
         //TEST_SAFE_OP( writer.GetInfo()->SetSubject ( PdfString("Testing the PDF Library") ) );
         TEST_SAFE_OP( writer.GetInfo()->SetSubject (
-                          PdfString(reinterpret_cast<const pdf_utf8*>("「PoDoFo」は今から日本語も話せます。") ) ) );
+                          PdfString(reinterpret_cast<const pdf_utf8*>(" PoDoFo ") ) ) );
         TEST_SAFE_OP( writer.GetInfo()->SetKeywords( PdfString("Test;PDF;") ) );
 
         //xTEST_SAFE_OP( writer.AttachFile( PdfFileSpec("../../../podofo/test/CreationTest/CreationTest.cpp", true, &writer ) ) );
