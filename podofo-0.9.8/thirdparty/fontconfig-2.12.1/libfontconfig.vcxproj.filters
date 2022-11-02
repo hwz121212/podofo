@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{e8f37b44-f68c-4ad2-aae0-d07645872068}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{3aed5301-3b40-4c2d-b04a-121e99c8d551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\fontconfig">
+      <UniqueIdentifier>{a6a09dc2-2377-4a5d-987c-7556f4f10808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\fc-blanks">
+      <UniqueIdentifier>{df908d81-45d5-4f68-a33f-e4aef954ae50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\fc-case">
+      <UniqueIdentifier>{37e90b68-21c8-414c-b823-2234c157ab14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\fc-glyphname">
+      <UniqueIdentifier>{d4a705eb-4f19-4d28-a029-3cb2e02f900b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\fc-lang">
+      <UniqueIdentifier>{fd9fadea-2f47-40ee-9537-639781e610ed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\fontconfig\fcfreetype.h">
+      <Filter>include\fontconfig</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fontconfig\fcprivate.h">
+      <Filter>include\fontconfig</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fontconfig\fontconfig.h">
+      <Filter>include\fontconfig</Filter>
+    </ClInclude>
+    <ClInclude Include="include\compat.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dirent.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcalias.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcaliastail.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcarch.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcatomic.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcdeprecate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcftalias.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcftaliastail.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcftint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcmutex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcobjs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcobjshash.gperf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcobjshash.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcstdint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcwindows.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ftglue.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fc-blanks\fcblanks.h">
+      <Filter>include\fc-blanks</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fc-case\fccase.h">
+      <Filter>include\fc-case</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fc-glyphname\fcglyphname.h">
+      <Filter>include\fc-glyphname</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fc-glyphname\fcglyphname.tmpl.h">
+      <Filter>include\fc-glyphname</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fc-lang\fclang.h">
+      <Filter>include\fc-lang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fc-lang\fclang.tmpl.h">
+      <Filter>include\fc-lang</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\fcatomic.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcblanks.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fccache.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fccfg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fccharset.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fccompat.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcdbg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcdefault.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcdir.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcformat.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcfreetype.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcfs.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcinit.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fclang.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fclist.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcmatch.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcmatrix.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcname.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcobjs.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcpat.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcrange.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcserialize.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcstat.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcstr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcweight.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcxml.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ftglue.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

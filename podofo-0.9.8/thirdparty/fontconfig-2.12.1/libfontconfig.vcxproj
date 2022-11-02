@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\compat.h" />
+    <ClInclude Include="include\config.h" />
+    <ClInclude Include="include\dirent.h" />
+    <ClInclude Include="include\fc-blanks\fcblanks.h" />
+    <ClInclude Include="include\fc-case\fccase.h" />
+    <ClInclude Include="include\fc-glyphname\fcglyphname.h" />
+    <ClInclude Include="include\fc-glyphname\fcglyphname.tmpl.h" />
+    <ClInclude Include="include\fc-lang\fclang.h" />
+    <ClInclude Include="include\fc-lang\fclang.tmpl.h" />
+    <ClInclude Include="include\fcalias.h" />
+    <ClInclude Include="include\fcaliastail.h" />
+    <ClInclude Include="include\fcarch.h" />
+    <ClInclude Include="include\fcatomic.h" />
+    <ClInclude Include="include\fcdeprecate.h" />
+    <ClInclude Include="include\fcftalias.h" />
+    <ClInclude Include="include\fcftaliastail.h" />
+    <ClInclude Include="include\fcftint.h" />
+    <ClInclude Include="include\fcint.h" />
+    <ClInclude Include="include\fcmutex.h" />
+    <ClInclude Include="include\fcobjs.h" />
+    <ClInclude Include="include\fcobjshash.gperf.h" />
+    <ClInclude Include="include\fcobjshash.h" />
+    <ClInclude Include="include\fcstdint.h" />
+    <ClInclude Include="include\fcwindows.h" />
+    <ClInclude Include="include\fontconfig\fcfreetype.h" />
+    <ClInclude Include="include\fontconfig\fcprivate.h" />
+    <ClInclude Include="include\fontconfig\fontconfig.h" />
+    <ClInclude Include="include\ftglue.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\fcatomic.c" />
+    <ClCompile Include="src\fcblanks.c" />
+    <ClCompile Include="src\fccache.c" />
+    <ClCompile Include="src\fccfg.c" />
+    <ClCompile Include="src\fccharset.c" />
+    <ClCompile Include="src\fccompat.c" />
+    <ClCompile Include="src\fcdbg.c" />
+    <ClCompile Include="src\fcdefault.c" />
+    <ClCompile Include="src\fcdir.c" />
+    <ClCompile Include="src\fcformat.c" />
+    <ClCompile Include="src\fcfreetype.c" />
+    <ClCompile Include="src\fcfs.c" />
+    <ClCompile Include="src\fcinit.c" />
+    <ClCompile Include="src\fclang.c" />
+    <ClCompile Include="src\fclist.c" />
+    <ClCompile Include="src\fcmatch.c" />
+    <ClCompile Include="src\fcmatrix.c" />
+    <ClCompile Include="src\fcname.c" />
+    <ClCompile Include="src\fcobjs.c" />
+    <ClCompile Include="src\fcpat.c" />
+    <ClCompile Include="src\fcrange.c" />
+    <ClCompile Include="src\fcserialize.c" />
+    <ClCompile Include="src\fcstat.c" />
+    <ClCompile Include="src\fcstr.c" />
+    <ClCompile Include="src\fcweight.c" />
+    <ClCompile Include="src\fcxml.c" />
+    <ClCompile Include="src\ftglue.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>staticlibtemplate</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>LIBXML_STATIC;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;WIN32;_WINDOWS;_WIN32_WINNT=0x0600;_LIB;_DEBUG;</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;$(SolutionDir)thirdparty\freetype-2.12.1\include;$(SolutionDir)thirdparty\expat-R_2_4_8;$(SolutionDir)thirdparty\xml2-v2.9.14\include;$(SolutionDir)thirdparty\iconv-1.17\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>LIBXML_STATIC;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;WIN32;_WINDOWS;_WIN32_WINNT=0x0600;_LIB;NDEBUG;</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;$(SolutionDir)thirdparty\freetype-2.12.1\include;$(SolutionDir)thirdparty\expat-R_2_4_8;$(SolutionDir)thirdparty\xml2-v2.9.14\include;$(SolutionDir)thirdparty\iconv-1.17\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
