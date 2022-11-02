@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;..;$(SolutionDir)thirdparty\boost_1_80_0;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\jpeg-9e\include;$(SolutionDir)thirdparty\tiff-4.4.0\include;$(SolutionDir)thirdparty\openssl-1.1.1q\include;$(SolutionDir)thirdparty\freetype-2.12.1\include;$(SolutionDir)thirdparty\fontconfig-2.12.1\include;$(SolutionDir)thirdparty\png1637\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..;$(SolutionDir)thirdparty\boost_1_80_0;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\jpeg-9e\include;$(SolutionDir)thirdparty\tiff-4.4.0\include;$(SolutionDir)thirdparty\openssl-1.1.1q\include;$(SolutionDir)thirdparty\freetype-2.12.1\include;$(SolutionDir)thirdparty\fontconfig-2.12.1\include;$(SolutionDir)thirdparty\png1637\include;$(SolutionDir)thirdparty\idn-1.22\include</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -60,10 +60,10 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;podofo_shared_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LIBIDN_STATIC;WIN32;_WINDOWS;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;podofo_shared_EXPORTS</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>libeay32.lib;libjpeg.lib;png.lib;tiff.lib;zlib.lib;libidn.lib;fontconfig.lib;freetype.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -74,7 +74,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;..;$(SolutionDir)thirdparty\boost_1_80_0;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\jpeg-9e\include;$(SolutionDir)thirdparty\tiff-4.4.0\include;$(SolutionDir)thirdparty\openssl-1.1.1q\include;$(SolutionDir)thirdparty\freetype-2.12.1\include;$(SolutionDir)thirdparty\fontconfig-2.12.1\include;$(SolutionDir)thirdparty\png1637\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..;$(SolutionDir)thirdparty\boost_1_80_0;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\jpeg-9e\include;$(SolutionDir)thirdparty\tiff-4.4.0\include;$(SolutionDir)thirdparty\openssl-1.1.1q\include;$(SolutionDir)thirdparty\freetype-2.12.1\include;$(SolutionDir)thirdparty\fontconfig-2.12.1\include;$(SolutionDir)thirdparty\png1637\include;$(SolutionDir)thirdparty\idn-1.22\include</AdditionalIncludeDirectories>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
@@ -83,12 +83,12 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;podofo_shared_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LIBIDN_STATIC;WIN32;_WINDOWS;NDEBUG;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;podofo_shared_EXPORTS</PreprocessorDefinitions>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>libeay32.lib;libjpeg.lib;png.lib;tiff.lib;zlib.lib;libidn.lib;fontconfig.lib;freetype.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
