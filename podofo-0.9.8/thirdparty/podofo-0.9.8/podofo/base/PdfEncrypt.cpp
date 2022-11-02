@@ -1706,7 +1706,8 @@ void PdfEncryptSHABase::PreprocessPassword( const std::string &password, unsigne
     memcpy(outBuf, password_sasl, len);
     // password_sasl is allocated by stringprep_profile (libidn), so use idn_free
     // (In Windows the libidn.dll could use an other heap and then the normal free or podofo_free will crash while debugging podofo.)
-    idn_free(password_sasl);
+    //idn_free(password_sasl);
+	free(password_sasl);
 }
 
 void
