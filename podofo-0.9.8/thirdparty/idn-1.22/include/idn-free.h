@@ -44,6 +44,6 @@
  * information.
  */
 
-void IDNAPI idn_free (void *ptr);
+extern IDNAPI void idn_free (void *ptr);
 
 #endif /* IDN_FREE_H */

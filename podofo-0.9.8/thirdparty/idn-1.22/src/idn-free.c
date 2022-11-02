@@ -42,8 +42,7 @@
  * important to deallocate memory allocated within the same module
  * that allocated it.  This function makes that possible.
  **/
-void
-idn_free (void *ptr)
+void idn_free (void *ptr)
 {
   free (ptr);
 }
