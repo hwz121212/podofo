@@ -15,70 +15,70 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\lib\gl\c-ctype.c">
+    <ClCompile Include="src\gl\c-ctype.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\gl\c-strcasecmp.c">
+    <ClCompile Include="src\gl\c-strcasecmp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\gl\c-strncasecmp.c">
+    <ClCompile Include="src\gl\c-strncasecmp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\idn-free.c">
+    <ClCompile Include="src\idn-free.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\idna.c">
+    <ClCompile Include="src\idna.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\nfkc.c">
+    <ClCompile Include="src\nfkc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\pr29.c">
+    <ClCompile Include="src\pr29.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\profiles.c">
+    <ClCompile Include="src\profiles.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\punycode.c">
+    <ClCompile Include="src\punycode.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\rfc3454.c">
+    <ClCompile Include="src\rfc3454.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\strerror-idna.c">
+    <ClCompile Include="src\strerror-idna.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\strerror-pr29.c">
+    <ClCompile Include="src\strerror-pr29.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\strerror-punycode.c">
+    <ClCompile Include="src\strerror-punycode.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\strerror-stringprep.c">
+    <ClCompile Include="src\strerror-stringprep.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\strerror-tld.c">
+    <ClCompile Include="src\strerror-tld.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\gl\striconv.c">
+    <ClCompile Include="src\gl\striconv.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\stringprep.c">
+    <ClCompile Include="src\stringprep.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\gl\strverscmp.c">
+    <ClCompile Include="src\gl\strverscmp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\tld.c">
+    <ClCompile Include="src\tld.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\tlds.c">
+    <ClCompile Include="src\tlds.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\toutf8.c">
+    <ClCompile Include="src\toutf8.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\version.c">
+    <ClCompile Include="src\version.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -95,7 +95,7 @@
     <ClInclude Include="include\stdbool.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\stringprep.h">
+    <ClInclude Include="include\stringprep.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\unistd.h">
