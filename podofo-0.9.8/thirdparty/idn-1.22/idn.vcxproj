@@ -112,11 +112,19 @@
     <ClCompile Include="src\version.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\gunibreak.h" />
+    <ClInclude Include="include\gunicomp.h" />
+    <ClInclude Include="include\gunidecomp.h" />
+    <ClInclude Include="include\idn-free.h" />
+    <ClInclude Include="include\idna.h" />
+    <ClInclude Include="include\pr29.h" />
+    <ClInclude Include="include\punycode.h" />
     <ClInclude Include="include\stringprep.h" />
     <ClInclude Include="include\ac-stdint.h" />
     <ClInclude Include="include\config.h" />
     <ClInclude Include="include\idn-int.h" />
     <ClInclude Include="include\stdbool.h" />
+    <ClInclude Include="include\tld.h" />
     <ClInclude Include="include\unistd.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
