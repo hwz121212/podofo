@@ -6,9 +6,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\podofoencrypt\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Source Files">
       <UniqueIdentifier>{421FBAB8-8467-3811-A0E6-8BF4454CC6F2}</UniqueIdentifier>
     </Filter>

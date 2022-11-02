@@ -13,13 +13,18 @@
     <ClCompile Include="..\podofoimpose\planreader_legacy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\podofoimpose\CMakeLists.txt" />
+    <ClCompile Include="planreader_lua.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
       <UniqueIdentifier>{421FBAB8-8467-3811-A0E6-8BF4454CC6F2}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="planreader_lua.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
