@@ -115,7 +115,7 @@
     
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\podofo-0.9.8\podofo-0.9.8\test\VariantTest\VariantTest.cpp" />
+    <ClCompile Include="..\VariantTest\VariantTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     

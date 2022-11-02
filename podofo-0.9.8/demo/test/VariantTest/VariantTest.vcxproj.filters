@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\podofo-0.9.8\podofo-0.9.8\test\VariantTest\VariantTest.cpp">
+    <ClCompile Include="..\VariantTest\VariantTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\podofo-0.9.8\podofo-0.9.8\test\VariantTest\CMakeLists.txt" />
+    <CustomBuild Include="..\VariantTest\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
