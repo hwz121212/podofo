@@ -44,8 +44,8 @@
 #include <BaseTsd.h>
 typedef SSIZE_T ssize_t;
 #endif
-#include <stringprep.h>
-#include <idn-free.h> // The entry point to the Windows memory de-allocation function
+
+#include <idna.h> // The entry point to the Windows memory de-allocation function
 #include <openssl/sha.h>
 #include <openssl/aes.h>
 #endif // PODOFO_HAVE_LIBIDN

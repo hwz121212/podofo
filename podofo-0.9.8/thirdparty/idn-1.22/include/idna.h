@@ -24,8 +24,10 @@
 # define IDNA_H
 
 #include <idna_export.h>
+#include <idn-free.h>
 # include <stddef.h>		/* size_t */
 # include <idn-int.h>		/* uint32_t */
+#include <stringprep.h>
 
 # ifdef __cplusplus
 extern "C"
