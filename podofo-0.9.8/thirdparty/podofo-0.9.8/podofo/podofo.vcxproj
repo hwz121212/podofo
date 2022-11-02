@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;..;$(SolutionDir)thirdparty\boost_1_80_0;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\jpeg-9e\include;$(SolutionDir)thirdparty\tiff-4.4.0\include;$(SolutionDir)thirdparty\openssl-1.1.1q\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..;$(SolutionDir)thirdparty\boost_1_80_0;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\jpeg-9e\include;$(SolutionDir)thirdparty\tiff-4.4.0\include;$(SolutionDir)thirdparty\openssl-1.1.1q\include;$(SolutionDir)thirdparty\freetype-2.12.1\include</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -74,7 +74,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;..;$(SolutionDir)thirdparty\boost_1_80_0;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\jpeg-9e\include;$(SolutionDir)thirdparty\tiff-4.4.0\include;$(SolutionDir)thirdparty\openssl-1.1.1q\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..;$(SolutionDir)thirdparty\boost_1_80_0;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\jpeg-9e\include;$(SolutionDir)thirdparty\tiff-4.4.0\include;$(SolutionDir)thirdparty\openssl-1.1.1q\include;$(SolutionDir)thirdparty\freetype-2.12.1\include</AdditionalIncludeDirectories>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
