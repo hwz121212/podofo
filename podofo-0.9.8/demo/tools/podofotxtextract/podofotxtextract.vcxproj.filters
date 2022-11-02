@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\podofo-0.9.8\podofo-0.9.8\tools\podofotxtextract\TextExtractor.cpp">
+    <ClCompile Include="..\podofotxtextract\TextExtractor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\podofo-0.9.8\podofo-0.9.8\tools\podofotxtextract\podofotxtextract.cpp">
+    <ClCompile Include="..\podofotxtextract\podofotxtextract.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\podofo-0.9.8\podofo-0.9.8\tools\podofotxtextract\CMakeLists.txt" />
+    <CustomBuild Include="..\podofotxtextract\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">

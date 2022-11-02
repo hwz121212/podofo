@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\podofo-0.9.8\podofo-0.9.8\tools\podofocolor\podofocolor.cpp">
+    <ClCompile Include="..\podofocolor\podofocolor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\podofo-0.9.8\podofo-0.9.8\tools\podofocolor\colorchanger.cpp">
+    <ClCompile Include="..\podofocolor\colorchanger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\podofo-0.9.8\podofo-0.9.8\tools\podofocolor\colorspace.cpp">
+    <ClCompile Include="..\podofocolor\colorspace.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\podofo-0.9.8\podofo-0.9.8\tools\podofocolor\graphicsstack.cpp">
+    <ClCompile Include="..\podofocolor\graphicsstack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\podofo-0.9.8\podofo-0.9.8\tools\podofocolor\iconverter.cpp">
+    <ClCompile Include="..\podofocolor\iconverter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\podofo-0.9.8\podofo-0.9.8\tools\podofocolor\dummyconverter.cpp">
+    <ClCompile Include="..\podofocolor\dummyconverter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\podofo-0.9.8\podofo-0.9.8\tools\podofocolor\grayscaleconverter.cpp">
+    <ClCompile Include="..\podofocolor\grayscaleconverter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\podofo-0.9.8\podofo-0.9.8\tools\podofocolor\CMakeLists.txt" />
+    <CustomBuild Include="..\podofocolor\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
